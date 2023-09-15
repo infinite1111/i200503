@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+
+            android:id="@+id/back_arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/back_arrow_image"
+            android:text="Email Verification"
+            android:textStyle="bold"
+            android:textSize="24sp">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:text="Enter the code sent to your email"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/code"
+            android:layout_marginTop="33dp"
+            android:onClick="Resendcodein23s"
+            android:text="Resend code in 23s"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="2.5dp"
+            android:id="@+id/enter_code1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/forgot_password"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/enter_code2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/forgot_password"
+            android:layout_toRightOf="@id/enter_code1"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/enter_code3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/forgot_password"
+            android:layout_toRightOf="@id/enter_code2"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/enter_code4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/forgot_password"
+            android:layout_toRightOf="@id/enter_code3"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/enter_code5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/forgot_password"
+            android:layout_toRightOf="@id/enter_code4"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/c1"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/enter_code1"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:id="@+id/c2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/enter_code1"
+            android:layout_toRightOf="@id/c1"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c3"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/enter_code1"
+            android:layout_toRightOf="@id/c2"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c4"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c1"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c5"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c3"
+            android:layout_toRightOf="@id/c4"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c6"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c3"
+            android:layout_toRightOf="@id/c5"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c7"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c4"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c8"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c5"
+            android:layout_toRightOf="@id/c7"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c9"
+            android:layout_marginLeft="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c6"
+            android:layout_toRightOf="@id/c8"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/c0"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@id/c8"
+            android:layout_alignEnd="@id/c8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c8"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/circle">
+        </Button>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginLeft="62dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_alignTop="@id/c8"
+            android:layout_marginTop="130dp"
+            android:layout_toRightOf="@id/c0"
+            android:background="@drawable/backspace">
+        </Button>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
