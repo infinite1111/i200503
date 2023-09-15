@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">i200503</string>
+
+        <string-array name="dropdown_countries">
+            <item>Select Country</item>
+            <item>Pakistan</item>
+            <item>Canada</item>
+            <item>Germany</item>
+            <item>Austria</item>
+            <!-- Add more items as needed -->
+
+        </string-array>
+
+    <string-array name="dropdown_cities">
+        <item>Select City</item>
+        <item>Karachi</item>
+        <item>Islamabad</item>
+        <item>Multan</item>
+        <item>Lahore</item>
+
+    </string-array>
+
+
+
+</resources>
