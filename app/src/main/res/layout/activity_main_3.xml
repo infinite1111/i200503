@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="246dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:src="@drawable/spot_it">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="Registration"
+        android:textStyle="bold"
+        android:textSize="26sp">
+
+    </TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/register"
+            android:layout_marginTop="60dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginTop="30dp"
+            android:hint="Enter name"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/enter_name"
+            android:layout_marginTop="60dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/email"
+            android:layout_marginTop="30dp"
+            android:hint="Enter email"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/enter_email"
+            android:layout_marginTop="60dp"
+            android:text="Contact Number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/enter_contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/contact_no"
+            android:layout_marginTop="30dp"
+            android:hint="Enter contact number"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/enter_contact_no"
+            android:layout_marginTop="60dp"
+            android:text="Country"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_rectangle"
+            android:layout_alignTop="@+id/country"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:id="@+id/dropdown_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/country"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:entries="@array/dropdown_countries"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dropdown_menu"
+            android:layout_marginTop="60dp"
+            android:text="City"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_rectangle"
+            android:layout_alignTop="@+id/city"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:id="@+id/city_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/city"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:entries="@array/dropdown_cities"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignTop="@id/city_dropdown"
+            android:layout_marginTop="85dp"
+            android:background="@drawable/rounded_orange">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="Register"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
