@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <TextView
+
+            android:id="@+id/enter_code1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white">
+        </TextView>
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="48dp"
+            android:id="@+id/st_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back">
+        </Button>
+
+
+
+        <TextView
+
+            android:layout_marginLeft="70dp"
+            android:id="@+id/chat"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Report"
+            android:layout_marginTop="49dp"
+            android:textStyle="bold"
+            android:textSize="27sp">
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chat"
+            android:layout_marginTop="80dp"
+            android:text="Reason for Reporting"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginTop="30dp"
+            android:hint="Enter reason here"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Submit Report"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignTop="@id/enter_name"
+            android:layout_marginTop="650dp"
+            android:background="@drawable/rounded_orange">
+
+        </Button>
