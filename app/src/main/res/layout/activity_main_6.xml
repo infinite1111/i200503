@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+
+        >
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Find exactly what you need!"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="25sp">
+
+    </TextView>
+
+        <TextView
+            android:paddingLeft="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/start"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_rectangle"
+            android:hint="Search"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+
+            >
+        </TextView>
+
+        <ImageView
+            android:paddingLeft="20dp"
+            android:id="@+id/back_arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/search"
+            android:src="@drawable/search"
+            android:layout_marginTop="105dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Recent Searches"
+            android:layout_alignTop="@+id/search"
+            android:layout_marginTop="70dp"
+            android:textStyle="normal"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/one"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number One"
+            android:layout_alignTop="@+id/recent"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Button
+
+            android:id="@+id/go1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/one"
+            android:layout_alignTop="@id/recent"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/two"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number Two"
+            android:layout_alignTop="@+id/one"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/go2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/two"
+            android:layout_alignTop="@id/go1"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/three"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number Three"
+            android:layout_alignTop="@+id/two"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/go3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/three"
+            android:layout_alignTop="@id/go2"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Popular Searches"
+            android:layout_alignTop="@+id/three"
+            android:layout_marginTop="50dp"
+            android:textStyle="normal"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/pone"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number One"
+            android:layout_alignTop="@+id/popular"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/pgo1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/pone"
+            android:layout_alignTop="@id/popular"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/ptwo"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number two"
+            android:layout_alignTop="@+id/pone"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/pgo2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/ptwo"
+            android:layout_alignTop="@id/pgo1"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/pthree"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number Three"
+            android:layout_alignTop="@+id/ptwo"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/pgo3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/pthree"
+            android:layout_alignTop="@id/pgo2"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:id="@+id/pfour"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item Number Four"
+            android:layout_alignTop="@+id/pthree"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/pgo4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/pfour"
+            android:layout_alignTop="@id/pgo3"
+            android:background="@drawable/out_arrow">
+        </Button>
+
+        />
+
+
+        <TextView
+
+            android:id="@+id/enter_code1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignTop="@+id/pfour"
+            android:layout_marginTop="240dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white"
+            >
+        </TextView>
+
+        <ImageView
+            android:paddingLeft="08dp"
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/search"
+            android:layout_alignTop="@+id/pfour"
+            android:src="@drawable/home"
+            android:layout_marginTop="255dp"
+            android:layout_marginRight="20dp"
+
+            />
+
+        <TextView
+            android:paddingLeft="38dp"
+            android:id="@+id/home1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Home"
+            android:layout_alignTop="@+id/home"
+            android:layout_marginTop="40dp"
+            android:textStyle="normal"
+            android:textSize="15sp">
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/search1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/home1"
+            android:layout_marginLeft="11dp"
+            android:layout_alignTop="@+id/pgo4"
+            android:src="@drawable/search_big"
+            android:layout_marginTop="255dp"
+            app:tint="@color/orange"
+
+            />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/search2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:text="Search"
+            android:layout_alignTop="@+id/search1"
+            android:layout_toRightOf="@+id/home1"
+            android:layout_marginTop="40dp"
+            android:textStyle="normal"
+            android:textSize="15sp">
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/add_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search1"
+            android:layout_marginLeft="25dp"
+            android:layout_alignTop="@+id/pgo4"
+            android:src="@drawable/add_circle"
+            android:layout_marginTop="260dp"
+            app:tint="@color/orange"
+
+            />
+
+
+        <ImageView
+
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_circle"
+            android:layout_marginLeft="25dp"
+            android:layout_alignTop="@+id/pgo4"
+            android:src="@drawable/chat"
+            android:layout_marginTop="255dp"
+
+            />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/chat2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Chat"
+            android:layout_alignTop="@+id/search1"
+            android:layout_toRightOf="@+id/search2"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:textStyle="normal"
+            android:textSize="15sp">
+        </TextView>
+
+
+        <ImageView
+
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chat"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@+id/pgo4"
+            android:src="@drawable/profile"
+            android:layout_marginTop="255dp"
+
+            />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/profile2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Profile"
+            android:layout_alignTop="@+id/search1"
+            android:layout_toRightOf="@+id/chat"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="normal"
+            android:textSize="15sp">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
