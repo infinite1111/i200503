@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <TextView
+
+            android:id="@+id/enter_code1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_white">
+        </TextView>
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="48dp"
+            android:id="@+id/st_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back">
+        </Button>
+
+
+
+        <TextView
+
+            android:layout_marginLeft="70dp"
+            android:id="@+id/chat"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Edit Profile"
+            android:layout_marginTop="49dp"
+            android:textStyle="bold"
+            android:textSize="27sp">
+        </TextView>
+
+        <TextView
+
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/changed"
+            android:layout_toRightOf="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:text="Save Changes"
+            android:layout_marginTop="54dp"
+            android:textStyle="bold"
+            android:textSize="16.5sp">
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chat"
+            android:layout_marginTop="80dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginTop="30dp"
+            android:text="Daud"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/enter_name"
+            android:layout_marginTop="60dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/hourly"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/rate"
+            android:layout_marginTop="30dp"
+            android:text="daud@gmail.com"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hourly"
+            android:layout_marginTop="60dp"
+            android:text="Contact Number"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/description"
+            android:layout_marginTop="30dp"
+            android:text="0123 4567890"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:background="@drawable/round_rectangle"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/des"
+            android:layout_marginTop="60dp"
+            android:text="Country"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_rectangle"
+            android:layout_alignTop="@+id/country"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:id="@+id/dropdown_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/country"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:entries="@array/dropdown_countries"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dropdown_menu"
+            android:layout_marginTop="60dp"
+            android:text="City"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_rectangle"
+            android:layout_alignTop="@+id/city"
+            android:layout_marginTop="30dp"/>
+
+        <Spinner
+            android:id="@+id/dropdown_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/city"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:entries="@array/dropdown_countries"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
