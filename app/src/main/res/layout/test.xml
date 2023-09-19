@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:weightSum="3">
+
+
+
+        <Button
+
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/more_gray"
+            android:background="@drawable/close">
+        </Button>
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/bright"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/brightness"
+            android:backgroundTint="@color/more_gray">
+        </Button>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/timer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/timer"
+            android:backgroundTint="@color/more_gray">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
