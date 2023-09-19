@@ -16,3 +16,6 @@
         android:src="@drawable/spot_it">
 
     </ImageView>
+
+</LinearLayout>
+

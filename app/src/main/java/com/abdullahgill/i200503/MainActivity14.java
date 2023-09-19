@@ -1,4 +1,22 @@
 package com.abdullahgill.i200503;
 
-public class MainActivity14 {
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+
+public class MainActivity14 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_14);
+    }
+
+    // Enable the Up button
+
+
+
+
 }

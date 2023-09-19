@@ -90,7 +90,10 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_alignTop="@id/enter_name"
-            android:layout_marginTop="650dp"
+            android:layout_marginTop="610dp"
             android:background="@drawable/rounded_orange">
 
         </Button>
+
+    </RelativeLayout>
+</LinearLayout>
